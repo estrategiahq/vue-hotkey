@@ -2,7 +2,7 @@
 
 > Estratégia na hora de registrar um evento do teclado
 
-_mais detalhes em [hotkey](https://github.com/jaywcjlove/hotkeys)_
+_A motivação desse wrapper é pra ter um padrão no uso do front-end e para caso precise de mais flexbilidade não precisar trocar todos os front-ends. [hotkey](https://github.com/jaywcjlove/hotkeys) por baixo_
 
 ### Instalar
 
