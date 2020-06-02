@@ -5,7 +5,7 @@
 ### Instalar
 
 ```
-npm install git+ssh//
+npm install git+ssh//git@github.com:estrategiahq/vue-hotkey-estrategico.git
 ```
 
 ### Setup
