@@ -16,6 +16,7 @@ function install (Vue, opts) {
     prevent: ['input', 'textarea']
   }
   const options = { ...defaultOptions, ...opts }
+  const lock = new Map()
 
   const vueHotKey = {
     register (key, fn, hotkeysOpts) {
@@ -37,7 +38,15 @@ function install (Vue, opts) {
         if (options.prevent.includes(element)) {
           return
         }
+
+        if (lock.get(key)) {
+          return
+        }
+
+        lock.set(key, true)
+
         fn(event, handler)
+        setTimeout(() => lock.set(key, false), 500)
       })
     },
     unregister (key) {
