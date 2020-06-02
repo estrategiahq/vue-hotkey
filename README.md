@@ -2,6 +2,8 @@
 
 > Estratégia na hora de registrar um evento do teclado
 
+_mais detalhes em [hotkey](https://github.com/jaywcjlove/hotkeys)_
+
 ### Instalar
 
 ```

@@ -19,10 +19,10 @@ function install (Vue, opts) {
 
   const vueHotKey = {
     register (key, fn, hotkeysOpts) {
-      if (!key) {
+      if ([undefined, null].includes(key)) {
         throw new Error('You need to pass a key')
       }
-      if (!fn) {
+      if (!fn && typeof fn !== 'function') {
         throw new Error('You need to pass a callback')
       }
 
