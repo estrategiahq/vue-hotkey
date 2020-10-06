@@ -1,6 +1,6 @@
 {
   "name": "@estrategiahq/vue-hotkey-estrategico",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
