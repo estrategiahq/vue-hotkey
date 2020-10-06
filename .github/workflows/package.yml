@@ -1,0 +1,62 @@
+name: package
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
+    steps:
+      - name: Checkout on branch
+        uses: actions/checkout@v2
+
+      - name: Setup NPM registry
+        uses: actions/setup-node@v2-beta
+        with:
+          registry-url: 'https://npm.pkg.github.com'
+        
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install application dependencies
+        run: npm install
+
+      - name: Generate build
+        run: npm run build
+
+      - name: Publish package
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    needs: publish
+
+    steps:
+      - name: Checkout on branch
+        uses: actions/checkout@v2
+
+      - name: Get NPM Version
+        id: package-version
+        uses: martinbeentjes/npm-get-version-action@master
+
+      - name: Create release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.package-version.outputs.current-version}}
+          release_name: v${{ steps.package-version.outputs.current-version}}
+          draft: false
+          prerelease: false
