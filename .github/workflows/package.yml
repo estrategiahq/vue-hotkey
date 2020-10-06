@@ -1,12 +1,9 @@
 name: package
 
 on:
-  pull_request: 
-  
-  # WIP
-  # push:
-  #   branches:
-  #     - master
+  push:
+    branches:
+      - master
 
 jobs:
   publish:
