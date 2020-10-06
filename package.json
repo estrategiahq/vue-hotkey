@@ -1,33 +1,33 @@
 {
-  "name": "@estrategiahq/vue-hotkey-estrategico",
-  "version": "0.0.3",
-  "description": "",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@github.com/estrategiahq/vue-hotkey-estrategico.git",
-    "directory": "dist"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
-  },
-  "keywords": [],
-  "author": "Estratégia Educacional",
-  "license": "ISC",
-  "dependencies": {
-    "hotkeys-js": "^3.8.1"
-  },
-  "devDependencies": {
-    "eslint": "^7.1.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
-  }
+	"name": "@estrategiahq/vue-hotkey-estrategico",
+	"version": "0.0.3",
+	"description": "Simple Vue hotkeys",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "ssh://git@github.com/estrategiahq/vue-hotkey-estrategico.git",
+		"directory": "dist"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack"
+	},
+	"keywords": ["hotkey"],
+	"author": "Estratégia Educacional",
+	"license": "MIT",
+	"dependencies": {
+		"hotkeys-js": "^3.8.1"
+	},
+	"devDependencies": {
+		"eslint": "^7.1.0",
+		"eslint-config-standard": "^14.1.1",
+		"eslint-plugin-import": "^2.20.2",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-standard": "^4.0.1",
+		"webpack": "^4.44.2",
+		"webpack-cli": "^3.3.12"
+	}
 }

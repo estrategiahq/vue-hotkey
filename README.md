@@ -1,10 +1,11 @@
 ## Vue Hotkey Estrategico
 
-> Estratégia na hora de registrar um evento do teclado
+> Simple Vue Hotkey wrapper
 
-_A motivação desse wrapper é pra ter um padrão no uso do front-end e para caso precise de mais flexbilidade não precisar trocar todos os front-ends. [hotkey](https://github.com/jaywcjlove/hotkeys) por baixo_
+We're using [hotkey](https://github.com/jaywcjlove/hotkeys) under the hood for now.
 
-### Instalar
+
+### Install
 
 ```
 npm install git+ssh//git@github.com:estrategiahq/vue-hotkey-estrategico.git
@@ -21,7 +22,7 @@ Vue.use(VueHotkeyEstrategico, {
 })
 ```
 
-### Uso
+### Using
 
 ```js
 
