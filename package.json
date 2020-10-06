@@ -1,16 +1,21 @@
 {
-  "name": "vue-hotkey-estrategico",
+  "name": "@estrategiahq/vue-hotkey-estrategico",
   "version": "0.0.2",
   "description": "",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/estrategiahq/vue-hotkey-estrategico.git",
+    "directory": "dist"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "Estratégia Educacional",
   "license": "ISC",
   "dependencies": {
     "hotkeys-js": "^3.8.1"
