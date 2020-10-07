@@ -8,7 +8,7 @@ We're using [hotkey](https://github.com/jaywcjlove/hotkeys) under the hood for n
 ### Install
 
 ```
-npm install git+ssh//git@github.com:estrategiahq/vue-hotkey-estrategico.git
+npm install @estrategiahq/vue-hotkey-estrategico
 ```
 
 ### Setup
