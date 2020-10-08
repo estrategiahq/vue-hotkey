@@ -1,4 +1,4 @@
-## Vue Hotkey Estrategico
+## Vue Hotkey
 
 > Simple Vue Hotkey wrapper
 
@@ -8,16 +8,16 @@ We're using [hotkey](https://github.com/jaywcjlove/hotkeys) under the hood for n
 ### Install
 
 ```
-npm install @estrategiahq/vue-hotkey-estrategico
+npm install @estrategiahq/vue-hotkey
 ```
 
 ### Setup
 
 ```js
 import Vue from 'vue'
-import VueHotkeyEstrategico from 'vue-hotkey-estrategico'
+import VueHotkey from '@estrategiahq/vue-hotkey'
 
-Vue.use(VueHotkeyEstrategico, {
+Vue.use(VueHotkey, {
   prevent: ['input', 'textarea'] // default configs
 })
 ```
