@@ -1,6 +1,6 @@
 ## Vue Hotkey
 
-> Simple Vue Hotkey wrapper
+> Simple Vue Hotkey
 
 We're using [hotkey](https://github.com/jaywcjlove/hotkeys) under the hood for now.
 
