@@ -1,22 +1,27 @@
 {
-  "name": "@estrategiahq/vue-hotkey-estrategico",
+  "name": "@estrategiahq/vue-hotkey",
   "version": "0.0.3",
-  "description": "",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
+  "description": "Simple Vue hotkeys",
+  "main": "dist/main.js",
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com/estrategiahq/vue-hotkey-estrategico.git",
+    "url": "git+ssh://git@github.com/estrategiahq/vue-hotkey.git",
     "directory": "dist"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
-  "keywords": [],
-  "author": "Estratégia Educacional",
-  "license": "ISC",
+  "keywords": [
+    "hotkey",
+    "vue",
+    "vuejs"
+  ],
+  "author": {
+    "name": "Estratégia Educacional",
+    "url": "https://estrategiaeducacional.com.br"
+  },
+  "license": "MIT",
   "dependencies": {
     "hotkeys-js": "^3.8.1"
   },
@@ -29,5 +34,9 @@
     "eslint-plugin-standard": "^4.0.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/estrategiahq/vue-hotkey/issues"
+  },
+  "homepage": "https://github.com/estrategiahq/vue-hotkey#readme"
 }
