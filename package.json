@@ -1,6 +1,6 @@
 {
   "name": "@estrategiahq/vue-hotkey",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Simple Vue hotkeys",
   "main": "dist/main.js",
   "repository": {
