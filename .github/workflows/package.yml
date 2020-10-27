@@ -16,7 +16,10 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }}
           access: public
-
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          registry: 'https://npm.pkg.github.com'
   release:
     runs-on: ubuntu-latest
     needs: publish
